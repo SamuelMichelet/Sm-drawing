@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dessin.css">
+    <title>Sm drawing</title>
+</head>
+<body>
+<header>
+<label id="forme">
+    Pinceau:
+    <button id="carre" title="Carré">&#9632;</button>
+    <button id="rond" title="Rond" class="actif">&#9679;</button>
+    <button id="rectangle" title="Rectangle">&#9645;</button>
+    <button id="cercle" title="Cercle">&#9711;</button>
+    <button id="gomme" title="Efface les dessins">Gomme</button>
+    <button id="copie" title="Copie une partie du dessin">Copier</button>
+    <button id="colle" title="Colle une partie copiée">Coller</button>
+</label>
+
+<label>
+    Taille:
+    <input id="taille" type="number" min="1" value="10">
+</label>
+
+<label>
+    Couleur:
+    <input id="couleur" type="color" value="#000000">
+</label>
+</header>
+
+<!-- canvas dessin -->
+<canvas id="dessin">
+    Oup's!! votre navigateur ne prends pas en charge l'élément canvas..
+</canvas>
+
+<!-- canvas brouillon -->
+<canvas id="brouillon"></canvas>
+
+<script src="./js/principal.js"></script>
+<script src="./js/outils.js"></script>
+<script src="./js/dessin.js"></script>
+</body>
+</html>
